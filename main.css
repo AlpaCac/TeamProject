@@ -1,0 +1,129 @@
+*
+{
+	mask-origin: 0;
+	padding: 0;
+}
+.sum_bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+}
+/* 背景待修改 */
+.window
+{
+	margin: 0 auto;
+	width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	/* background-color: red; */
+	background-image: url("image_main/bg7.jpg");
+	/* background-position: 50% 5%; */
+    background-size: cover;
+}
+/* 背景待修改 */
+.name,.name2
+{
+	width: 23%;
+	height: 15%;
+	/* background-color: rgba(0, 0, 0, 0.3); */
+	border-radius: 4%;
+	position: absolute;
+	right: 39%;
+	top: 8%;
+	background-image: url(image_main/title_1.png);
+	background-size: cover;
+}
+.name2
+{
+	width: 35%;
+	height: 15%;
+	top: 22%;
+	right: 33%;
+	background-image: url(image_main/title_2.png);
+}
+.cha
+{
+	width: 14%;
+	height: 30%;
+	position: absolute;
+	bottom: 10%;
+	left: 30%;
+	background-image: url(image_main/cha_tem.png);
+	background-size: cover;
+	/* background-color: red; */
+
+}
+.buttons
+{
+	width: 25%;
+	height: 55%;
+	/* background-color: rgba(0, 0, 0, 0.7); */
+	position: absolute;
+	right: 43%;
+	bottom: 5%;
+}
+.new,.continue,.collect
+{
+	width: 80%;
+	height: 20%;
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	/* background-color: rgba(0, 0, 0, 0.3); */
+	border-radius: 10%;
+}
+.new:hover,.continue:hover,.collect:hover
+{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.new img
+{
+	width: 100%;
+	margin-left: 10%;
+}
+.new
+{
+	left: 30%;
+	/* background-image: url(image_main/start.png); */
+	/* background-size: cover; */
+	/* background-position: 100% 100%; */
+}
+.continue img
+{
+	width: 100%;
+	margin-left: 10%;
+}
+.continue
+{
+	top: 30%;
+	left: 30%;
+	/* background-image: url(image_main/load.png);
+	background-size: cover;
+	background-position: 100% 60%; */
+}
+.collect img
+{
+	width: 100%;
+	margin-left: 0%;
+}
+.collect
+{
+	top: 60%;
+	left: 33%;
+	/* background-image: url(image_main/collection.png);
+	background-size: cover;
+	background-position: 100% 100%; */
+}
+.buttons a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel="shortcut icon" href="../image_main/mt1.ico">
+	<title>谁动了我的外卖</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div align="center">
+<div id="background_gxq">
+<div id="white_fyp">
+	<div id="screenshot_fyp"></div>
+	<div class="upaction_gxq">
+
+		<div id="savediv">
+			<span id="text_yhf">请输入存档名：</span>
+			<form action="">
+				<input type="text" name="Savedes" id="saveinput" maxlength="10">
+				<input type="button" id="button_input" value="确定" onclick="saved()">
+			</form>
+		</div>
+		<div id="input_namediv">
+			<span id="text_yhf2">请输入你的名字：</span>
+			<form action="">
+				<input type="text" name="Savedes" id="input_name" maxlength="6">
+				<input type="button" id="button_input_name" value="确定" onclick="named()">
+			</form>
+		</div>
+
+		<div id="character1_fyp"><img src=""></div>
+		<div id="character3_fyp"><img src=""></div>
+		<div id="end_gxq">
+			<div id="end-title_gxq">结局一</div>
+			<div id="end-content_gxq">bad end</div>
+		</div>
+		<div id="choice_gxq" align="center">
+			<span id="choose_gxq">你的选择是？</span>
+			<span id="choice1_gxq" onclick="i+=d1[j],skip_fyp(words,bkimg,i,names),j++">choice1</span>
+			<span id="choice2_gxq" onclick="i+=d2[j],skip_fyp(words,bkimg,i,names),j++">choice2</span>
+			<span id="choice3_gxq" onclick="i+=d3[j],skip_fyp(words,bkimg,i,names),j++">choice3</span>
+		</div>
+		<div id="character2_fyp"><img src=""></div>
+		<div id="col_yhf1" onclick="getcol4()"></div>
+		<div id="col_yhf2" onclick="getcol1()"></div>
+		<div id="col_yhf3" onclick="getcol2()"></div>
+		<div id="col_yhf4" onclick="getcol3()"></div>
+		<div id="col_yhf5" onclick="getcol5()"></div>
+	</div>
+	<div class="lowaction_fyp">
+		<div class="Name_gxq">
+			<p id="name_gxq">
+			&nbsp&nbsp&nbsp&nbsp
+			<!-- 张三tx： -->
+		</p>
+		</div>
+	<div class="interaction_gxq" onclick="next_yhf()">
+		
+		<p id="talk_gxq">
+			【星期四 大运村主路上 正午】
+		</p>
+		<div class="button_gxq">
+			<ul>
+			<li id="save_gxq" onclick="event.cancelBubble = true,saveclicked_yhf()">Save</li>
+			<li id="load_gxq" onclick="event.cancelBubble = true,load_clicked()">Load</li>
+
+			<!-- 已修改 -->
+			<li id="skip_gxq" onclick="event.cancelBubble = true,next_yhf()" >Skip</li>
+			<li id="skip1_gxq">Skip</li>
+			<li id="auto_gxq" onclick="event.cancelBubble = true,savedis_yhf(),auto_fyp()">Auto</li>
+			<li id="system_gxq" onclick="back_main()">Home</li>
+			<!-- <li id="back_fyp" onclick="">Back</li> -->
+			<!-- -------------------------------------- -->
+
+			</ul>
+		</div>
+
+	</div>
+	</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<script src="game.js"></script>
+
+</body>
+</html>

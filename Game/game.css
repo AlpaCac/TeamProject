@@ -1,0 +1,503 @@
+/*初始化*/
+    *{
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        user-select: none;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        background-color: black;
+    }
+ /*背景图片*/
+    #background_gxq{
+        width: 1229px;
+        height: 720px;
+        background-image: url(bg_1/1bg.jpg);
+        background-size: cover;
+    }
+    #white_fyp{
+        width: 1229px;
+        height: 720px;
+        background-color: rgba(255, 255, 255, 0);
+        transition: background-color 0.7s linear;
+    }
+    #screenshot_fyp{
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 450px;
+        width: 330px;
+        height: 660px;
+        background-image: url(images/截图.jpg);
+    }
+ /*上半部分*/
+    .upaction_gxq{
+        width: 1229px;
+        height: 459px;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+        /*border: dotted black 5px;*/
+    }
+    #character1_fyp{
+        position: absolute;
+        display: none;
+        top: 210px;
+        left: 130px;
+        width: 240px;
+        height: 500px;
+        background-image: url(人物/r1.png);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #character2_fyp{
+        position: absolute;
+        top: 210px;
+        left: 900px;
+        width: 240px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #character3_fyp{
+        position: absolute;
+        top: 210px;
+        left: 300px;
+        width: 240px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+ /*分支选项*/
+     #choice_gxq{
+         display: none;
+         position: absolute;
+         background-color: rgba(200, 255, 255, 0.7);
+        top: 119px;
+        left: 324px;
+        width: 600px;
+        height: 320px;
+     }
+     #choose_gxq{
+         font-family:Tahoma;
+        display: block;
+        margin-left: 15px;
+        margin-top: 40px;
+        width: 290px;
+        height: 50px;
+        color: rebeccapurple;
+        text-align: center;
+        font-size: 30px;
+        margin-right: 7px;
+     }
+     #choice1_gxq{
+         font-family:Tahoma;
+        display: block;
+        margin-left: 5px;
+        margin-top: 40px;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 560px;
+        height: 50px;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        background-color: lightcoral;
+        border-radius: 40px;
+        margin-right: 7px;
+     }
+     #choice2_gxq{
+         font-family:Tahoma;
+        display: block;
+        margin-left: 5px;
+        margin-top: 40px;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 560px;
+        height: 50px;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        background-color: lightcyan;
+        border-radius: 40px;
+        margin-right: 7px;
+     }
+     #choice3_gxq{
+         font-family:Tahoma;
+        display: none;
+        margin-left: 5px;
+        margin-top: 40px;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 560px;
+        height: 50px;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        background-color: lightcyan;
+        border-radius: 40px;
+        margin-right: 7px;
+     }
+ /*结局*/ 	
+     #end_gxq{
+         z-index: 100;
+         position: absolute;
+         background-color: rgba(200, 200, 200, 0.65);
+        top: 119px;
+        left: 224px;
+        width: 8	00px;
+        height: 320px;
+     }
+     #end-title_gxq{
+         font-family:Tahoma;
+        display: none;
+        margin-left: 205px;
+        margin-top: 40px;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 380px;
+        height: 80px;
+        color: yellow;
+        text-align: center;
+        font-size: 58px;
+        background-color: lightskyblue;
+        border-radius: 40px;
+        margin-right: 7px;
+     }
+     #end-content_gxq{
+         font-family:Tahoma;
+        display: none;
+        margin-left: 5px;
+        margin-top: 60px;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 760px;
+        height: 60px;
+        color: yellow;
+        text-align: center;
+        font-size: 38px;
+        background-color:  lightskyblue;
+        border-radius: 40px;
+        margin-right: 7px;
+     }
+    #col_yhf1{/*扇子*/
+        display: none;
+        position: absolute;
+        top: 400px;
+        left: 620px;
+        width: 40px;
+        height: 40px;
+        /* background-color: black; */
+        background-image: url("../collection/image_collection/col4_true.png");
+    }
+    #col_yhf2{/*麦克风*/
+        display: none;
+        position: absolute;
+        top: 430px;
+        left: 320px;
+        width: 10px;
+        height: 50px;
+        /* background-color: black; */
+        background-image: url("../collection/image_collection/col1_true.png");
+    }
+    #col_yhf3{/*蝴蝶结*/
+        display: none;
+        position: absolute;
+        top: 430px;
+        left: 940px;
+        width: 30px;
+        height: 30px;
+        /* background-color: black; */
+        background-image: url("../collection/image_collection/col2_true.png");
+    }
+    #col_yhf4{
+        display: none;
+        position: absolute;
+        top: 470px;
+        left: 40px;
+        width: 40px;
+        height: 40px;
+        /* background-color: rgba(0, 255, 0, .3); */
+        background-image: url("../collection/image_collection/col3_true.png");
+    }
+    #col_yhf5{
+        display: none;
+        position: absolute;
+        top: 110px;
+        left: 350px;
+        width: 40px;
+        height: 20px;
+        /* background-color: rgba(0, 255, 0, .3); */
+        background-image: url("../collection/image_collection/hide5.png");
+    }
+ /*下半部分*/
+    .lowaction_fyp{
+        position: absolute;
+        top: 490px;
+        z-index: 100;
+    }
+ /*姓名框*/
+    .Name_gxq{
+        width: 1229px;
+        height: 56px;
+    }
+    #name_gxq{
+        float: left;
+        margin-left: 119px;
+        width:252px;
+        height: 37px;
+        color: saddlebrown;
+        border-radius: 22px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 29px;
+        font-family:"Times New Roman",Georgia,Serif;
+        font-weight: bolder; 
+    }
+ /*文字框*/
+    .interaction_gxq{
+        width: 1221px;
+        height: 160px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: dotted skyblue 4px;
+    }
+    #talk_gxq{
+        width: 1103px;
+        height: 89px;
+        text-align: left;
+        margin-top: 11px;
+        margin-left: 119px;
+        margin-right: 59px;
+        font-size: 25px;
+        font-family:"Times New Roman",Georgia,Serif;
+        color: rgba(0, 0, 0, 1.0);
+        transition: color 2s linear;
+    }
+    .button_gxq{
+        margin-left: 667px;
+        margin-top: 22px;
+        width: all;
+        height: 22px;
+        /*border: dotted black 5px;*/
+    }
+    #save_gxq{
+        font-family:Tahoma;
+        display: block;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  skyblue;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #save_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 111px;
+        color:purple;
+    }
+    #load_gxq{
+        font-family:Tahoma;
+        display: block;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  lightpink;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #load_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 111px;
+        color:purple;
+    }
+    #skip_gxq{
+        font-family:Tahoma;
+        display: block;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  skyblue;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #skip1_gxq{
+        font-family:Tahoma;
+        display: none;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  skyblue;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #skip1_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 111px;
+        color:purple;
+    }
+    #skip_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 111px;
+        color:purple;
+    }
+    #auto_gxq{
+        font-family:Tahoma;
+        display: block;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  lightpink;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #auto_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 100px;
+        color:purple;
+    }
+    #system_gxq{
+        font-family:Tahoma;
+        display: block;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  gold;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #system_gxq:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 111px;
+        color:purple;
+    }
+    #back_fyp{
+        font-family:Tahoma;
+        display: none;
+        width: 93px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        background-color:  lightgreen;
+        border-radius: 40px;
+        margin-right: 7px;
+        float: left;
+    }
+    #back_fyp:hover{
+        background-color:  rgba(255,255,255,.7);
+        width: 100px;
+        color:purple;
+    }
+    /* 已修改 */
+    #savediv,#input_namediv
+    {
+        /* width: 40%; */
+        /* height: 30%; */
+        width: 500px;
+        height: 200px;
+        /* width: 600px; */
+        /* height: 230px; */
+        border-radius: 3%;
+        border: solid black;
+        background-color: rgb(96, 221, 200);
+        position: absolute;
+        /* top: 20%; */
+        left: 50%;
+        margin-left: -250px;
+        margin-top: 150px;
+        /* top: 119px; */
+        /* left: 468px; */
+        /* float: left; */
+        /* display: block; */
+        /* margin-left: 60px; */
+        /* margin: auto auto; */
+        /* margin-top: 150px; */
+        z-index: 999999999;
+        display: none;
+    }
+    #input_namediv
+    {
+        display: none;
+    }
+    #text_yhf,#text_yhf2
+    {
+        font-family:Tahoma;
+        display: block;
+        margin: 0 auto;
+        width: 290px;
+        height: 50px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+    #saveinput,#input_name
+    {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+
+input[type=text],input[type=button]
+{
+    width: 340px;
+    /* padding: 0 25px; */
+    height: 40px;
+    border: 2px solid #f2f2f2;
+    background: rgba(0,0,0,0.1);
+    /* color: #202124; */
+    font-size: 14px;
+    line-height: 48px;
+    border-radius: 25px;
+}
+input[type=text]:focus { 
+    outline: none;
+    /* border-color: #2ca63b; */
+    background: rgba(0,0,0,0.5);
+ }
+input[type=text]::selection{
+    background:transparent;
+    background: rgba(0,0,0,0.5);
+}
+input[type=text]::-moz-selection{
+    background:transparent;
+    background: rgba(0,0,0,0.5);
+}
+input[type=text]::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgba(0,0,0,0.5);
+}
+input[type=text]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba(0,0,0,0.5);
+}
+input[type=text]::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba(0,0,0,0.5);
+}
+input[type=text]:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgba(0,0,0,0.5);
+}
+
+#button_input,#button_input_name
+{
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
